@@ -1,29 +1,29 @@
-from re import X
-from reportlab.pdfgen import canvas
 
+from reportlab.pdfgen import canvas  # biblioteca python usada para gerar o arquivo PDF solicitado
 
-def GeneratePDF():
+#criando a função "GeneratePDF"
+def GeneratePDF(lista):
     try:
-        nome_pdf = input('informe o nome do PDF:\n')
+        nome_pdf = input('Informe o nome do PDF: ')
         pdf = canvas.Canvas('{}.pdf'.format(nome_pdf))
         x = 720
-        lista = {}
-        while idade != 0:
-            nome = lista.append(input())
-            idade = lista.append(input())
-            for nome, idade in lista.items():
-                x -=20
-                pdf.drawString(247, X, '{}:{}'.format(nome, idade))
+        for nome,idade in lista.items():
+            x -= 20
+            pdf.drawString(247,x, '{} : {}'.format(nome,idade))
         pdf.setTitle(nome_pdf)
-        pdf.setFont("helvetica", 14)
-        pdf.drawString(245, 750 , "Lista de Clientes")
-        pdf.setFont("Helvetica-Bold" , 12)
-        pdf.drawString (245, 724, "Cliente")
+        pdf.setFont("Helvetica-Oblique", 14)
+        pdf.drawString(245,750, 'Lista de Convidados')
+        pdf.setFont("Helvetica-Bold", 12)
+        pdf.drawString(245,724, 'Nome e idade')
         pdf.save()
-        print('{}.pdf foi criado com sucesso, Parabéns meu caro aluno'.format(nome_pdf))
+        print('{}.pdf criado com sucesso!'.format(nome_pdf))
     except:
-        print('Infelizmente você repetira a materia fundamentos de sistemas')
+        print('Erro ao gerar {}.pdf'.format(nome_pdf))
+#criando duas listas para receber os valores solicitados pelo usuario
+entrada = []
+lista = []
+while entrada != 0: #while usado devido não saber a quantidade de repetições que o usuario deseja 
+    entrada = input('Digite os itens desejador no PDF')
+    lista.append(entrada)
 
-
-GeneratePDF()
-
+GeneratePDF(lista)

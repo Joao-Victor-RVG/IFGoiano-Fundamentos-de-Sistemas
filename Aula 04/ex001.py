@@ -1,7 +1,9 @@
 
+# biblioteca python usada para puxar as informações da API localizada na variavel "url="
 import requests 
-#
-url = 'https://economia.awesomeapi.com.br/all/USD-BRL'
+
+# url usada para fazer a API funcionar 
+url = 'https://economia.awesomeapi.com.br/all/USD-BRL' 
 #
 resposta = requests.get(url)
 #
@@ -13,6 +15,7 @@ if resposta.status_code == 200:
 # resultado do valor em reais vezes o valor do dollar atualizado  
 valor_convertido=valor_em_reais *dolar_value
 print("{:.2f}".format(valor_convertido))
+
 
 
 

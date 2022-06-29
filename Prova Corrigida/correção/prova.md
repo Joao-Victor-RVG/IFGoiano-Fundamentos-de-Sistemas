@@ -8,8 +8,11 @@
 
 # Explicação:
 1- Uso da biblioteca psutil atraves do import, a biblioteca é usada para a ultilização de recursos de indentificação de sensores e coleta de dados dos mesmo de um hardware de computador atráves do Python
+
 2- Variavel ultilizada para coletar informações do sensor da bateria
+
 3- variavel ultilizada para coletar o dado de porcentagem de bateria do device
+
 4- Função print que irá retornar os valores coletados das duas variaveis anteriores e irá mostrar para o usuario
 # Função do script:
 O script da questão 1 tem a função de coletar dados de sensores presentes no hardware do seu computador e retornar valores a partir disso, o script em especifico retorna os valores de porcentagem de bateria para o usuario.
@@ -22,8 +25,11 @@ O script da questão 1 tem a função de coletar dados de sensores presentes no 
 4-    EAN13('123456789111', writer=ImageWriter()).write(file)
 # Explicação:
 1- Barcode é uma biblioteca Python que tem como função auxiliar na criação de um codigo de barras
+
 2- e na linha "1" e "2" podemos ver que o script solicitou funções especificas da biblioteca a partir do "import"
+
 3 - Na linha 3 os comandos digitados irão criar um arquivo ".PNG"  no local indicado e a função "open" irá abrir esse arquivo assim que o script for executado
+
 4- Na linha 4 o codigo presente irá colocar todos os dados que foi solicitado dentro do codigo de barras
 # Função do script:
 O script tem a função de gerar codigos de barra a partir de um script em python
@@ -54,14 +60,23 @@ O script tem a função de gerar codigos de barra a partir de um script em pytho
 # Explicação:
 
 1- Biblioteca "Bs4" é uma biblioteca Python de extração de dados de arquivos HTML e XML.
+
 2- Função Import requests é uma biblioteca Python que tem a função de importar funções para o python para a realização de solicitações de x naturezas
+
 3- Função HTML usada para colocar as informações recebidas da API em um arquivo HTML
+
 4- Beautiful Soup é um pacote Python para analisar documentos HTML e XML.
+
 5- Função do pacote BeautifulSoup para editar o conteudo HTML 
+
 6- Puxar as informações de temperatura minima de uma localidade pela API
+
 7- Puxar as informações de temperatura Maxima de uma localidade pela API
+
 8- Função print irá mostrar para o usuario o resumo do arquivo HTML gerado
+
 9- Irá mostrar para o usuario a temperatura Minima que a API forneceu 
+
 10- Irá mostrar para o usuario a temperatura maxima que a API forneceu
 
 

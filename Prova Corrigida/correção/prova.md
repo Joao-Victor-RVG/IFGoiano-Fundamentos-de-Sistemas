@@ -23,10 +23,13 @@ O script da questão 1 tem a função de coletar dados de sensores presentes no 
 
 # Questão 02
 1- from barcode import EAN13
+
 2- from barcode.writer import ImageWriter
 
 3- with open(r'C:\Users\Mather\.vscode\Codigo barra\teste4.png', 'wb') as file:
+
 4-    EAN13('123456789111', writer=ImageWriter()).write(file)
+
 # Explicação:
 1- Barcode é uma biblioteca Python que tem como função auxiliar na criação de um codigo de barras
 
@@ -41,6 +44,7 @@ O script tem a função de gerar codigos de barra a partir de um script em pytho
 # Questão 03 
 
 1- from bs4 import BeautifulSoup
+
 2- import requests
 
 
@@ -54,11 +58,14 @@ O script tem a função de gerar codigos de barra a partir de um script em pytho
 
 
 6- tempMin = soup.find(id = 'min-temp-1')
+
 7- tempMAx = soup.find(id = 'max-temp-1')
 
 
 8-   print(' Resumo:'+ resumo.text)
+
 9-   print('Temp. Minima:'+ tempMin.string)
+
 10- print('Temp. Máxima:'+tempMAx.string)
 
 # Explicação:

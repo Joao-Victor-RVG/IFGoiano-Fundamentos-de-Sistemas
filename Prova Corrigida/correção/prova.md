@@ -1,9 +1,12 @@
 
 
 # Questão 01
-1- import psutil   
+1- import psutil
+
 2- bateria = psutil.sensor_battery()
+
 3- nivel = str(bateria.percent)
+
 4- print(f'No momento você tem {nivel}$')
 
 

@@ -6,6 +6,7 @@
 3- nivel = str(bateria.percent)
 4- print(f'No momento você tem {nivel}$')
 
+
 # Explicação:
 1- Uso da biblioteca psutil atraves do import, a biblioteca é usada para a ultilização de recursos de indentificação de sensores e coleta de dados dos mesmo de um hardware de computador atráves do Python
 

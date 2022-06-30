@@ -90,5 +90,6 @@ O script tem a função de gerar codigos de barra a partir de um script em pytho
 
 10- Irá mostrar para o usuario a temperatura maxima que a API forneceu
 
-
+# Explicação:
+O script tem a função de puxar dados de uma API e apresentar informações sobre meterologia de uma determinada região, o código irá fornecer informações de temperatura maxima e minima de uma determinada região e irá fazer um documento HTML com todas as informações que o código gerou.
 
